@@ -4,7 +4,10 @@ import { Button, Form, Grid, Header, Image, Segment } from 'semantic-ui-react'
 import userService from "../../utils/userService";
 import { useNavigate } from "react-router-dom";
 
+
 export default function SignUpPage(props) {
+  
+  const navigate = useNavigate()
 
   const [error, setError] = useState('')
   const [state, setState] = useState({
@@ -15,10 +18,29 @@ export default function SignUpPage(props) {
     bio: ''
   })
 
+  const [selectedFile, setselectedFile] = useState('');
+  
+async function handleSubmit(e){
+    e.preventDefault()
+    
+    const formData = new FormData();
+    formData.append('photo', selectedFile);
+    
+    for (let fieldName in state ){
+      formData.append(fieldName, state[fieldName])
+    }
 
+    try {
+      
+      await userService.signup(formData)
+      
+      props.handleSignUpOrLogin()
 
-  function handleSubmit(){
-
+      navigate('/')
+    } catch(err){
+      console.log(err.message);
+      setError(err.message)
+    }
   }
 
   function handleChange(e){
@@ -74,7 +96,7 @@ export default function SignUpPage(props) {
           <Form.TextArea
             label="bio"
             name="bio"
-            placeholder="Tell us more about your dogs..."
+            placeholder="What kind of work do you do?..."
             onChange={handleChange}
           />
           <Form.Field>

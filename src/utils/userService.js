@@ -8,7 +8,7 @@ function signup(user) {
   return (
     fetch(BASE_URL + "signup", {
       method: "POST",
-      body: user,
+      body: user
     })
       .then((res) => {
         if (res.ok) return res.json();
