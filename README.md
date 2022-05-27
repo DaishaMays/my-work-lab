@@ -33,9 +33,9 @@ They can view other users workspaces and like their images.
 
 ## Tech Stack
 
-**Client:** React, JWT
+**Client:** React, JWT, CSS, Semantic ui, javascript
 
-**Server:** Node, Express, AWS, MongoDB
+**Server:** Node, Express, AWS, MongoDB, javascript
 
 ## Getting Started
 
