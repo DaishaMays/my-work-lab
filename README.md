@@ -2,23 +2,6 @@
 # My Work Lab
 
 ## About The App
-
-My Work Lab is an app that allows user to share their workspace
-and view others workspace. It fosters community, provides inspiration
-and helps to influence future purchases. 
-
-My goal is to give users a place to show off their unique spaces
-and get inspired by other users workspaces.
-
-The user can log into their own personal account. Add pictures
-of their workspace along with a description. 
-They can view other users workspaces and like their images.
-
-
-## Demo
-
-### Sign Up Page
-
 # My Work Lab
 
 ## About The App
