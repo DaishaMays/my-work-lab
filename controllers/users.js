@@ -22,12 +22,13 @@ async function signup(req, res) {
 
 
   s3.upload(params, async function(err, data){
+    console.log(err, ' <- error from aws')
     const user = new User({...req.body, photoUrl: data.Location});
+    console.log(User)
       try {
         await user.save();
         const token = createJWT(user);
         res.json({ token });
-
         
       
       } catch (err) {

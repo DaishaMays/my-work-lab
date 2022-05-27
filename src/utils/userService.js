@@ -72,4 +72,4 @@ const userService = {
   getProfile
 };
 
-export default userService
+export default userService;

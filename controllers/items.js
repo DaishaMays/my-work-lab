@@ -7,13 +7,13 @@ module.exports = {
 }
 
 async function create(req, res){
-    if(req.user.id != req.params.user_id) {
+    if(req.post.id !== req.params.id) {
         res.status(400).json({ msg: "Not Authorized"})
     }else{
     try{
-        Post.findOne({ _id: req.params.user_id })
-        .then(user => {
-        const item = user.items.id(req.params.item_id)
+        Post.findOne({ _id: req.params.id })
+        .then(post => {
+        const item = post.items.id(req.params.item_id)
         item.purchased = req.body.purchased
         post.save()
         res.json(item)
@@ -23,10 +23,10 @@ async function create(req, res){
 }}
 
 async function deleteItem(req, res){
-    if(req.user.id !== req.params.user_id) {
+    if(req.post.id !== req.params.id) {
         res.status(400).json({ msg: "Not Authorized"})
     }else{
-        Post.findOne({ _id: req.params.user_id })
+        Post.findOne({ _id: req.params.id })
         .then(post => {
         post.items.id(req.params.item_id).remove()
         post.save()
