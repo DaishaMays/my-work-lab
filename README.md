@@ -1,7 +1,3 @@
-
-# My Work Lab
-
-## About The App
 # My Work Lab
 
 ## About The App
