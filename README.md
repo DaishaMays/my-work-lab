@@ -77,5 +77,6 @@ https://trello.com/invite/b/wvelT1mi/fe9e56a37393bd801aa89ed1e06bef36/my-work-la
 
 - Add a Shopping List to each post
 - Add delete and update functionality to each post
+- Add comments
 
 
