@@ -42,6 +42,8 @@ They can view other users workspaces and like their images.
 
 
 ### Log In Page
+<img width="1348" alt="Screen Shot 2022-05-27 at 1 15 36 PM" src="https://user-images.githubusercontent.com/89038713/170757579-90be29ab-df0b-46d7-9751-ec181163a311.png">
+
 ### Profile Page
 ### Feed
 
