@@ -1,37 +1,96 @@
-## Setup 
 
-1. Clone the repo
-2. Rename the folder to your Project, you can use the `mv` command like `mv mern-boilerplate yourprojectname`
-3. Delete the `.git` file, when you are in the root of the file, you can press `ls` and you should see a `.git` file, then go ahead and run `rm -rf .git`
+# My Work Lab
+
+## About The App
+
+My Work Lab is an app that allows user to share their workspace
+and view others workspace. It fosters community, provides inspiration
+and helps to influence future purchases. 
+
+My goal is to give users a place to show off their unique spaces
+and get inspired by other users workspaces.
+
+The user can log into their own personal account. Add pictures
+of their workspace along with a description. 
+They can view other users workspaces and like their images.
 
 
-#### Setup your git repo
+## Demo
 
-1. go to github and create your github and create a repo (Without a readme or liscense you can add that later!)
-2. Then you can run the following commands in the root of your project 
+### Sign Up Page
 
-```
-git init
-git add .
-git commit -m "first commit"
-git remote add origin git@git.generalassemb.ly:SEI-CC/test.git // this will be whatever your address will be, look at the address in the code github gives you!
-git push -u origin main
-```
+# My Work Lab
 
-#### Setup the App
+## About The App
 
-```npm install```
+My Work Lab is an app that allows user to share their workspace
+and view others workspace. It fosters community, provides inspiration
+and helps to influence future purchases. 
 
-*DOTENV*
+My goal is to give users a place to show off their unique spaces
+and get inspired by other users workspaces.
 
-`touch .env`
+The user can log into their own personal account. Add pictures
+of their workspace along with a description. 
+They can view other users workspaces and like their images.
 
-add your variables
 
-```
-DATABASE_URL=mongodb://localhost:27017/testagramV2
-BUCKET_NAME=catcollectorone
-SECRET=mysecretforjwt
-```
+## Demo
 
-The app is configured, to use those respective key names for the database, jwt secret and aws bucket, of course you'll have your own values
+### Sign Up Page
+<img width="1344" alt="Screen Shot 2022-05-27 at 1 13 51 PM" src="https://user-images.githubusercontent.com/89038713/170756540-eb027494-cc5d-4f23-b28c-37e95909bf50.png">
+
+
+### Log In Page
+### Profile Page
+### Feed
+
+
+## Tech Stack
+
+**Client:** React, JWT
+
+**Server:** Node, Express, AWS, MongoDB
+
+## Getting Started
+
+### Link to the App:
+https://myworklab.herokuapp.com/signup
+
+### Trello:
+https://trello.com/invite/b/wvelT1mi/fe9e56a37393bd801aa89ed1e06bef36/my-work-lab
+
+
+## Next Steps
+
+- Add a Shopping List to each post
+- Add delete and update functionality to each post
+
+
+
+### Log In Page
+### Profile Page
+### Feed
+
+
+## Tech Stack
+
+**Client:** React, JWT
+
+**Server:** Node, Express, AWS, MongoDB
+
+## Getting Started
+
+### Link to the App:
+https://myworklab.herokuapp.com/signup
+
+### Trello:
+https://trello.com/invite/b/wvelT1mi/fe9e56a37393bd801aa89ed1e06bef36/my-work-lab
+
+
+## Next Steps
+
+- Add a Shopping List to each post
+- Add delete and update functionality to each post
+
+
