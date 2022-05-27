@@ -8,7 +8,12 @@ const s3 = new S3();
 
 module.exports = {
     create,
-    index
+    index,
+    deletePost
+}
+
+function deletePost(req,res){
+    console.log('This function is working')
 }
 
 function create(req, res){
